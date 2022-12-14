@@ -1,11 +1,13 @@
+import './ExpenseItem.css';
+
 const ExpenseItem = () => {
   return (
-    <div>
+    <div className='expense-item'>
       <div>Date 28th 2021</div>
-      <div>
+      <div className='expense-item__description'>
         <h2>Title</h2>
       </div>
-      <div>$294.67</div>
+      <div className='expense-item__price'>$294.67</div>
     </div>
   );
 };
