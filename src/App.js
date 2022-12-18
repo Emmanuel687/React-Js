@@ -26,7 +26,6 @@ function App() {
   ];
   return (
     <div className="App">
-      <h1>Hello React</h1>
       <ExpenseItem
         id={expenses.at(0).id}
         title={expenses.at(0).title}
