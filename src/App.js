@@ -1,6 +1,7 @@
 import React from "react";
 import "./App.css";
 import ExpenseItem from "./components/ExpenseItem";
+import Newexpense from "./components/NewExpense/Newexpense";
 
 const App = ()=> {
   const expenses = [
@@ -25,7 +26,9 @@ const App = ()=> {
     },
   ];
   return (
+
     <div className="App">
+      <Newexpense></Newexpense>
       <ExpenseItem
         id={expenses.at(0).id}
         title={expenses.at(0).title}
@@ -53,6 +56,8 @@ const App = ()=> {
         amount={expenses.at(3).amount}
         date={expenses.at(3).date}
       ></ExpenseItem>
+
+      
     </div>
   );
 }
